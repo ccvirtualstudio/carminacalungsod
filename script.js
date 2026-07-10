@@ -82,3 +82,25 @@ link.classList.add("active");
 });
 
 });
+
+
+
+const text="Virtual Assistant • Administrative Support • Social Media";
+
+let i=0;
+
+function typing(){
+
+if(i<text.length){
+
+document.getElementById("typing").innerHTML+=text.charAt(i);
+
+i++;
+
+setTimeout(typing,45);
+
+}
+
+}
+
+typing();
