@@ -104,3 +104,54 @@ setTimeout(typing,45);
 }
 
 typing();
+
+const fills=document.querySelectorAll(".skill-fill");
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.width=entry.target.getAttribute("style").replace("width:","");
+
+}
+
+});
+
+});
+
+fills.forEach(fill=>{
+
+fill.style.width="0";
+
+observer.observe(fill);
+
+});
+
+window.onload=()=>{
+
+document.getElementById("loader").style.display="none";
+
+}
+
+
+document.querySelectorAll(".primary-btn,.secondary-btn").forEach(btn=>{
+
+btn.addEventListener("click",function(e){
+
+const circle=document.createElement("span");
+
+circle.classList.add("ripple");
+
+this.appendChild(circle);
+
+setTimeout(()=>{
+
+circle.remove();
+
+},600);
+
+});
+
+});
