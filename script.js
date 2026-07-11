@@ -155,3 +155,108 @@ circle.remove();
 });
 
 });
+
+gtag('event', 'generate_lead', {
+
+event_category: 'Contact',
+
+event_label: 'Website Inquiry'
+
+});
+
+gtag('event', 'generate_lead', {
+
+event_category: 'Contact',
+
+event_label: 'Website Inquiry'
+
+});
+
+const calendlyBtn = document.querySelector(".calendly-btn");
+
+if (calendlyBtn) {
+    calendlyBtn.addEventListener("click", () => {
+        gtag('event', 'book_discovery_call', {
+            event_category: 'Calendly',
+            event_label: 'Discovery Call Click'
+        });
+    });
+}
+
+const chatbot=document.getElementById("chatbot");
+
+const toggle=document.getElementById("chat-toggle");
+
+toggle.onclick=()=>{
+
+chatbot.style.display=
+
+chatbot.style.display==="block"
+
+?
+
+"none"
+
+:
+
+"block";
+
+}
+
+document.querySelectorAll(".chat-option").forEach(button=>{
+
+button.addEventListener("click",()=>{
+
+const body=document.getElementById("chat-body");
+
+let reply="";
+
+switch(button.innerText){
+
+case "Services":
+
+reply="📁 Carmina offers Administrative Support, Email Management, Canva Design, Calendar Management, Data Entry, and Social Media Support.";
+
+break;
+
+case "Rates":
+
+reply="💰 Flexible pricing is available. Hourly, Part-time, Full-time, and custom packages are offered.";
+
+break;
+
+case "Portfolio":
+
+reply="🎨 You can explore Canva designs, admin workflows, spreadsheets, and productivity systems in the Portfolio section.";
+
+break;
+
+case "Discovery Call":
+
+reply="📅 Click the Discovery Call card to schedule a free consultation through Calendly.";
+
+break;
+
+case "Contact":
+
+reply="📧 You can send a message through the contact form or email directly.";
+
+break;
+
+}
+
+body.innerHTML+=`
+
+<div class="bot-message">
+
+${reply}
+
+</div>
+
+`;
+
+body.scrollTop=body.scrollHeight;
+
+});
+
+});

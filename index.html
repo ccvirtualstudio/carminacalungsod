@@ -24,10 +24,35 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+<!-- Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XSQ3FKKJ94"></script>
+
+<script>
+
+window.dataLayer = window.dataLayer || [];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('js', new Date());
+
+gtag('config', 'G-XSQ3FKKJ94');
+
+</script>
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xklvvy5l93");
+</script>
+
 </head>
 
 <body>
-
+<div class="cursor-glow"></div>
     <div id="loader">
 
 <div class="spinner"></div>
@@ -35,6 +60,7 @@
 </div>
 
     <div id="progressBar"></div>
+    <div id="scrollPercent">0%</div>
 
     <!-- ================= NAVBAR ================= -->
 
@@ -121,7 +147,7 @@
         </div>
 
         <div class="hero-image">
-
+                
             <div class="image-frame">
                 <img src="images/profile.png" alt="Carmina">
                 <div class="availability">
@@ -145,8 +171,10 @@
                 Email
                 </a>
 
-            </div>
 
+            </div>
+        </br>
+<p id="dailyQuote"></p>
             
 
         </div>
@@ -247,7 +275,7 @@
 
                 <div class="skill-bar">
 
-                    <div class="skill-fill" style="width:95%"></div>
+                    <div class="skill-fill" data-width="95%"></div>
 
                 </div>
 
@@ -265,7 +293,7 @@
 
                 <div class="skill-bar">
 
-                    <div class="skill-fill" style="width:90%"></div>
+                    <div class="skill-fill" data-width="90%"></div>
 
                 </div>
 
@@ -283,7 +311,7 @@
 
                 <div class="skill-bar">
 
-                    <div class="skill-fill" style="width:92%"></div>
+                    <div class="skill-fill" data-width="92%"></div>
 
                 </div>
 
@@ -301,7 +329,7 @@
 
                 <div class="skill-bar">
 
-                    <div class="skill-fill" style="width:94%"></div>
+                    <div class="skill-fill" data-width="94%"></div>
 
                 </div>
 
@@ -708,6 +736,7 @@ Continuous Learning
 
     </section>
 
+    
 <!-- ================= STATS ================= -->
 
     <section class="stats" data-aos="zoom-in">
@@ -735,9 +764,82 @@ Continuous Learning
     </section>
 
 
+    <!-- ================= WHY CHOOSE ME ================= -->
+
+<section class="why-me" data-aos="fade-up">
+
+    <div class="section-heading">
+
+        <span class="section-tag">
+            WHY CHOOSE ME
+        </span>
+
+        <h2>
+            More than just a Virtual Assistant.
+        </h2>
+
+        <p>
+            I bring dedication, organization, and a genuine commitment to helping your business succeed.
+        </p>
+
+    </div>
+
+    <div class="why-grid">
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-clock"></i>
+
+            <h3>Reliable</h3>
+
+            <p>
+                I value deadlines, consistency, and clear communication in every task.
+            </p>
+
+        </div>
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-bolt"></i>
+
+            <h3>Fast Learner</h3>
+
+            <p>
+                I quickly adapt to new systems, tools, and workflows to support your business efficiently.
+            </p>
+
+        </div>
+
+        <div class="why-card">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Client-Focused</h3>
+
+            <p>
+                Your goals become my priority. I strive to provide dependable support you can count on.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
 <!-- ================= CONTACT ================= -->
 
+
+
+
     <section class="contact" id="contact" data-aos="fade-left">
+
+        
+                  <div class="availability-banner">
+
+🟢 Currently accepting 2 new clients this month.
+
+</div>
 
         <div class="section-heading">
 
@@ -752,6 +854,7 @@ Continuous Learning
                 Feel free to reach out!
             </p>
 
+  
         </div>
 
         <div class="contact-container">
@@ -784,12 +887,44 @@ Continuous Learning
 
             </div>
 
+        <div class="contact-card discovery-card">
+
+        <i class="fa-solid fa-calendar-check"></i>
+
+        <h3>Discovery Call</h3>
+
+        <p>
+        Let's discuss your business needs in a free 30-minute call.
+        </p>
+
+        <a href="https://calendly.com/YOURUSERNAME"
+        class="primary-btn"
+        target="_blank">
+
+        Book Now
+
+        </a>
+
+        </div>
+
+        </div>
+
+        <div class="contact-hook">
+
+        <h3>
+        Let's Make Your Workday Easier ✨
+        </h3>
+
+        <p>
+        Whether you need help staying organized, managing daily tasks, or growing your business, I'd love to hear about your goals.
+        </p>
+
         </div>
 
 
         <form
             class="contact-form"
-            action="https://formspree.io/f/REPLACE_WITH_YOUR_ID"
+            action="https://formspree.io/f/xykqrqbl"
             method="POST">
 
             <input
@@ -851,7 +986,7 @@ Continuous Learning
 
 </div>
     <p>
-        Helping businesses stay organized, productive, and stress-free through reliable virtual assistance.
+        Helping businesses stay organized with reliable virtual assistance.
     </p>
 
     <div class="footer-links">
@@ -866,9 +1001,32 @@ Continuous Learning
 
     </div>
 
-    <p class="copyright">
-        © 2025 Carmina Calungsod. All rights reserved.
-    </p>
+<hr class="footer-line">
+
+<p class="copyright">
+ <p class="copyright">
+
+© <span id="year"></span> Carmina Calungsod
+
+</p>
+
+</p>
+
+<div class="visitor-counter">
+
+<h3>
+
+<i class="fa-solid fa-users"></i>
+
+Visitors
+
+</h3>
+
+<img
+src="https://api.visitorbadge.io/api/visitors?path=ccvirtualstudio.github.io&label=Total%20Visitors&countColor=%2372243E"
+/>
+
+</div>
 
 
 
@@ -876,7 +1034,7 @@ Continuous Learning
 
 
 
-<script src="script.js"></script>
+
 
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
@@ -894,5 +1052,58 @@ offset:100
 
 </script>
 
+        <div id="chatbot">
+
+        <div id="chat-header">
+
+        🤖 Mina AI
+localStorage
+        </div>
+
+        <div id="chat-body">
+
+        <div class="bot-message">
+
+        Hi! 👋
+
+        I'm Carmina's virtual assistant.
+
+        How can I help?
+
+        </div>
+
+        <button class="chat-option">
+        Services
+        </button>
+
+        <button class="chat-option">
+        Rates
+        </button>
+
+        <button class="chat-option">
+        Portfolio
+        </button>
+
+        <button class="chat-option">
+        Discovery Call
+        </button>
+
+        <button class="chat-option">
+        Contact
+        </button>
+
+        </div>
+
+        </div>
+
+        <button id="chat-toggle">
+
+        💬
+
+        </button>   
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
